@@ -10,3 +10,26 @@ export const App = () => {
     </div>
   );
 };
+
+const user = {
+  name: "Hedy Lamarr",
+  imageUrl: "https://avatars.githubusercontent.com/u/16016681",
+  imageSize: 90,
+};
+
+export const Profile = () => {
+  return (
+    <>
+      <h1>{user.name}</h1>
+      <img
+        className="avatar"
+        src={user.imageUrl}
+        alt={`Face of ${user.name}`}
+        style={{
+          width: user.imageSize,
+          height: user.imageSize,
+        }}
+      />
+    </>
+  );
+};
